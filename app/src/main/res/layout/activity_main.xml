@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    android:background="#bbbbbb"
+    android:layout_margin="5dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:text="Current Location" />
+
+    <EditText
+        android:id="@+id/inputLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/design_default_color_background"
+        android:hint="Location"
+        android:maxLength="20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Available APs" />
+
+    <ListView
+        android:id="@+id/wifiList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/scanNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Scan Now"
+        />
+
+    <Button
+        android:id="@+id/submitDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit to DB"
+        />
+
+    <Button
+        android:id="@+id/calDbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate dBm"
+        />
+
+</LinearLayout>
